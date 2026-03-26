@@ -3,7 +3,7 @@
 AEGIS Scanner — Web Crawler with Headless Browser Support
 Discovers endpoints, forms, parameters, and API paths from a target URL.
 
-Two crawling modes:
+Two crawling modes
 1. HEADLESS BROWSER (Playwright) — renders JavaScript, handles SPAs,
    Angular, React, Vue apps. Intercepts network requests to discover
    API calls. Clicks interactive elements. This is similar to how
