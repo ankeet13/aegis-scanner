@@ -1,3 +1,5 @@
+# Author: Shristi - Time-based SQLi Payloads
+
 # Time-Based Blind SQL Injection Payloads
 # These cause the database to sleep/wait if the injection point is vulnerable
 # Scanner measures response time — if >4.5s longer than baseline, confirmed

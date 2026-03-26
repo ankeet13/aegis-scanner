@@ -1,3 +1,4 @@
+# Author: Shristi - Response Analyzer Tests
 """
 AEGIS Scanner — Tests for Response Analyzer
 Tests the core detection engine that compares baseline vs attack responses.

@@ -1,3 +1,5 @@
+# Author: Shristi - Error-based SQLi Payloads
+
 # Error-Based SQL Injection Payloads
 # These trigger database syntax errors that leak DB type info in error messages
 '

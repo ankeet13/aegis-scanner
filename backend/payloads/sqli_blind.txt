@@ -1,3 +1,5 @@
+# Author: Shristi - Boolean-blind SQLi Payloads
+
 # Boolean-Blind SQL Injection Payloads
 # Format: TRUE_PAYLOAD|||FALSE_PAYLOAD
 # Scanner sends both and compares response differences
