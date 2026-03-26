@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv*/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+
+# ML model artifacts (regenerate with train_model.py)
+backend/ml/model/*.pkl
+backend/ml/data/*.csv
+
+# Reports (generated at runtime)
+reports/*.pdf
+
+# Node
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vulnerable app database (regenerate with setup_db.py)
+vulnerable_app/vulnerable.db

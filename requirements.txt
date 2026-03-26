@@ -1,0 +1,28 @@
+# Install: pip install -r requirements.txt
+
+# Web framework
+Flask==3.0.3
+flask-cors==4.0.1
+
+# HTTP requests
+requests==2.32.3
+urllib3==2.2.2
+
+# HTML parsing (crawler)
+beautifulsoup4==4.12.3
+
+# Machine Learning
+scikit-learn==1.5.1
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2
+
+# PDF report generation
+reportlab==4.2.2
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.2.2
+pytest-cov==5.0.0

@@ -1,0 +1,51 @@
+{
+  "required_headers": {
+    "Content-Security-Policy": {
+      "description": "Prevents XSS and data injection attacks by specifying allowed content sources",
+      "severity": "High",
+      "remediation": "Add CSP header. Start with: Content-Security-Policy: default-src 'self'; script-src 'self'"
+    },
+    "X-Frame-Options": {
+      "description": "Prevents clickjacking by controlling whether the page can be embedded in iframes",
+      "severity": "Medium",
+      "remediation": "Add header: X-Frame-Options: DENY (or SAMEORIGIN if iframing is needed)"
+    },
+    "X-Content-Type-Options": {
+      "description": "Prevents MIME-type sniffing which can lead to XSS via content-type confusion",
+      "severity": "Medium",
+      "remediation": "Add header: X-Content-Type-Options: nosniff"
+    },
+    "Strict-Transport-Security": {
+      "description": "Forces browsers to use HTTPS, preventing protocol downgrade attacks",
+      "severity": "High",
+      "remediation": "Add header: Strict-Transport-Security: max-age=31536000; includeSubDomains"
+    },
+    "Referrer-Policy": {
+      "description": "Controls how much referrer information is sent with requests to other origins",
+      "severity": "Low",
+      "remediation": "Add header: Referrer-Policy: strict-origin-when-cross-origin"
+    },
+    "Permissions-Policy": {
+      "description": "Controls which browser features (camera, microphone, geolocation) the page can use",
+      "severity": "Low",
+      "remediation": "Add header: Permissions-Policy: camera=(), microphone=(), geolocation=()"
+    }
+  },
+  "info_disclosure_headers": {
+    "Server": {
+      "description": "Reveals web server software and version, aiding targeted attacks",
+      "severity": "Low",
+      "remediation": "Remove or obfuscate the Server header in web server configuration"
+    },
+    "X-Powered-By": {
+      "description": "Reveals backend framework/language, narrowing attacker reconnaissance",
+      "severity": "Low",
+      "remediation": "Remove X-Powered-By header. In Express: app.disable('x-powered-by')"
+    },
+    "X-AspNet-Version": {
+      "description": "Reveals ASP.NET version information",
+      "severity": "Low",
+      "remediation": "Add to web.config: <httpRuntime enableVersionHeader=\"false\" />"
+    }
+  }
+}

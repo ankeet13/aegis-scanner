@@ -1,0 +1,22 @@
+# Common Default Credentials
+# Format: username:password
+admin:admin
+admin:password
+admin:123456
+admin:admin123
+admin:12345678
+root:root
+root:toor
+root:password
+test:test
+user:user
+user:password
+guest:guest
+admin:letmein
+admin:welcome
+administrator:administrator
+admin:changeme
+demo:demo
+admin:secret
+admin:pass
+admin:1234

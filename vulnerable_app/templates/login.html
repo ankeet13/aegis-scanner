@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login — Vulnerable Test App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 0 20px;
+            background: #f8fafc;
+            color: #1e293b;
+        }
+        h1 {
+            text-align: center;
+            color: #334155;
+            margin-bottom: 24px;
+        }
+        .login-form {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #475569;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        .error {
+            background: #fef2f2;
+            color: #dc2626;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .note {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .note code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <div class="login-form">
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <!--
+            VULNERABILITY: No CSRF token in this form.
+            The Auth Scanner checks for hidden inputs with names like
+            csrf_token, _csrf, _token, authenticity_token, etc.
+            None are present here, so it will flag this.
+        -->
+        <form method="POST" action="/login">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"
+                   placeholder="Enter username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <p class="note">
+            Try <code>admin:admin</code> or <code>test:test</code>
+        </p>
+    </div>
+
+    <a href="/" class="back-link">Back to Home</a>
+</body>
+</html>
