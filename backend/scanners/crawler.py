@@ -1,6 +1,6 @@
 # Author : Sudip Ojha
 """
-AEGIS Scanner — Enhanced Web Crawler with Headless Browser Support
+AEGIS Scanner — Web Crawler with Headless Browser Support
 Discovers endpoints, forms, parameters, and API paths from a target URL.
 
 Two crawling modes:
