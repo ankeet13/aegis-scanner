@@ -1,3 +1,5 @@
+# Author: Susam — MISCONFIGURATION SCANNER 
+
 """
 AEGIS Scanner — Security Misconfiguration Scanner
 Detects security misconfigurations across four checks:

@@ -1,3 +1,5 @@
+# Author: Susam — Common credential pairs
+
 # Common Default Credentials
 # Format: username:password
 admin:admin
