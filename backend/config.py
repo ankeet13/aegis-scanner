@@ -1,3 +1,5 @@
+# Author: Shristi — Configuration Module
+
 """
 AEGIS Scanner — Configuration
 Central constants, timeouts, thresholds, and paths used across all modules.

@@ -1,3 +1,5 @@
+# Author: Shristi — HTTP Client Module
+
 import time
 import requests
 from urllib.parse import urlencode, urlparse, parse_qs, urljoin

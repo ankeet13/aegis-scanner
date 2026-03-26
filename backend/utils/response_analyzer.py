@@ -1,3 +1,5 @@
+# Author: Shristi — Response Analyzer Module
+
 """
 AEGIS Scanner — Response Analyzer
 Compares baseline and attack responses to detect anomalies.
