@@ -1,3 +1,5 @@
+# Author: Shristi - SQL Injection Scanner Module
+
 """
 AEGIS Scanner — SQL Injection Scanner
 Detects SQL injection vulnerabilities using three detection techniques:
