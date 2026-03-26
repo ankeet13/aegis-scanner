@@ -1,3 +1,4 @@
+# Author : Sudip Ojha
 """
 AEGIS Scanner — Payload Manager
 Loads attack payloads from text files at runtime.

@@ -1,3 +1,4 @@
+#Author : Sudip Ojha
 # Sensitive Paths — Probed by Security Misconfiguration Scanner
 # If any of these return 200, they indicate exposed files
 /.env

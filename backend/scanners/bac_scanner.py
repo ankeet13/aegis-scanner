@@ -1,3 +1,4 @@
+# Author : Sudip Ojha
 """
 AEGIS Scanner — Broken Access Control Scanner
 Detects broken access control vulnerabilities using two techniques:
