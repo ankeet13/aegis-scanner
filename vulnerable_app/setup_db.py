@@ -1,3 +1,5 @@
+# Author: Susam — Database Setup Script
+
 """
 AEGIS Scanner — Vulnerable App Database Setup
 Creates a SQLite database with test data for the deliberately

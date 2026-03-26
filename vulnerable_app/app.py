@@ -1,3 +1,5 @@
+# Author: Susam — Vulnerable Test App
+
 """
 AEGIS Scanner — Deliberately Vulnerable Web Application
 A purposefully insecure Flask app for testing and demonstrating
