@@ -1,3 +1,4 @@
+# Author: Aayush — OWASP Policy Engine
 """
 AEGIS Scanner — Policy Engine
 Maps scan findings and predicted risk levels to actionable OWASP

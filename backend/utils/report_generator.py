@@ -1,3 +1,4 @@
+# Author: Aayush — PDF Report Generator
 """
 AEGIS Scanner — PDF Report Generator
 Generates a professional PDF security assessment report from scan results.

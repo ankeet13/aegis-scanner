@@ -1,3 +1,4 @@
+# Author: Aayush — Flask REST API Module
 """
 AEGIS Scanner — Flask REST API
 Main entry point that orchestrates the full scan pipeline:
