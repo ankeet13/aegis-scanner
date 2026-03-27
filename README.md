@@ -1,3 +1,6 @@
+<!-- Author: Aayush — Project Documentation -->
+
+
 # AEGIS Scanner
 
 **AI-Based Automated Web Application Vulnerability Scanner**
@@ -16,6 +19,8 @@ AEGIS Scanner is a DAST (Dynamic Application Security Testing) tool that scans w
 - **A05:2021 — Security Misconfiguration** (missing headers, exposed files, info disclosure, verbose errors)
 
 A trained **Random Forest classifier** predicts an overall risk level (Safe → Critical) from scan findings, and a **policy engine** maps each finding to actionable OWASP remediation guidance.
+
+
 
 ## Architecture
 

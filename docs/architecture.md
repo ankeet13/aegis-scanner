@@ -1,3 +1,4 @@
+<!-- Author: Aayush — Architecture Docs -->
 # AEGIS Scanner — Architecture Documentation
 
 ## 1. System Architecture
