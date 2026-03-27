@@ -1,3 +1,4 @@
+# Author: Aayush — Auth Failures Scanner
 """
 AEGIS Scanner — Authentication Failures Scanner
 Detects authentication weaknesses across four checks:

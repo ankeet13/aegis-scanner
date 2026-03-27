@@ -1,3 +1,4 @@
+# Author: Aayush — Synthetic Data Generator
 """
 AEGIS Scanner — Synthetic Training Data Generator
 Generates realistic synthetic scan results to train the Random Forest

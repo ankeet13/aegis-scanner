@@ -1,3 +1,4 @@
+# Author: Aayush — Feature Extractor Module
 """
 AEGIS Scanner — Feature Extractor
 Converts raw scan findings from all four scanners into a numeric feature
